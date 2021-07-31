@@ -105,6 +105,10 @@ public abstract class AbstractActionHandler<T extends FragmentActivity & CommonA
     protected final Lookup<String, Executor> mExecutors;
     protected final DialogController mDialogs;
     protected final Model mModel;
+    protected final Model mayurModel;
+    private boolean isdefault;
+    private int numberoffiles;
+    
     protected final Injector<?> mInjector;
 
     private final LoaderBindings mBindings;
