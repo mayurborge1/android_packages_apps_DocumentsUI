@@ -64,13 +64,16 @@ public class DirectoryLoader extends AsyncTaskLoader<DirectoryResult> {
     private final LockingContentObserver mObserver;
     private final RootInfo mRoot;
     private final State mState;
-    private final Uri mUri;
+    private final Uri mUri;\
+    private final Uri MayurUri;    
     private final SortModel mModel;
     private final Lookup<String, String> mFileTypeLookup;
     private final boolean mSearchMode;
     private final Bundle mQueryArgs;
     private final boolean mPhotoPicking;
-
+    private final int mayurPhoto;
+    Private final boolean mayurPhotoPicking;
+    
     @Nullable
     private DocumentInfo mDoc;
     private CancellationSignal mSignal;
